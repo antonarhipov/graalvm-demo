@@ -1,0 +1,16 @@
+[
+  {
+    "name" : "jdk.internal.misc.Unsafe",
+    "methods": [
+      { "name":  "getUnsafe" },
+      { "name":  "allocateInstance" }
+    ]
+  },
+  {
+    "name" : "org.arhan.graalvmdemo.Blah",
+    "methods": [
+      { "name":  "bar" },
+      { "name":  "foo" }
+    ]
+  }
+]
