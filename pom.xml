@@ -49,9 +49,9 @@
                 <artifactId>native-maven-plugin</artifactId>
                 <configuration>
                     <skipTests>true</skipTests>
-                    <mainClass>org.arhan.graalvmdemo.GraalvmDemoApplication</mainClass>
-                    <imageName>hello</imageName>
-                    <buildArgs>-O0,-g,--verbose,-H:+ReportExceptionStackTraces,-H:+UnlockExperimentalVMOptions,-H:ReflectionConfigurationFiles=reflection-config.json,--initialize-at-build-time=org.arhan.graalvmdemo.HelloWorld</buildArgs>
+                    <mainClass>org.demo.graalvm.Application</mainClass>
+                    <imageName>pangrams</imageName>
+                    <buildArgs>-O0,-g,--verbose,-H:+ReportExceptionStackTraces,-H:+UnlockExperimentalVMOptions,-H:ReflectionConfigurationFiles=reflection-config.json,--initialize-at-build-time=org.demo.graalvm.PangramController</buildArgs>
                 </configuration>
                 <executions>
                     <execution>

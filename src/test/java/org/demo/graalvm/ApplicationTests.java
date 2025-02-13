@@ -1,10 +1,10 @@
-package org.arhan.graalvmdemo;
+package org.demo.graalvm;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GraalvmDemoApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {

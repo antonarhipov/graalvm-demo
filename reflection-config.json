@@ -7,10 +7,16 @@
     ]
   },
   {
-    "name" : "org.arhan.graalvmdemo.Blah",
+    "name" : "org.demo.graalvm.Pangrams",
     "methods": [
-      { "name":  "bar" },
-      { "name":  "foo" }
+      { "name":  "fox" },
+      { "name":  "wizard" },
+      { "name":  "sphinx" },
+      { "name":  "jukebox" },
+      { "name":  "lynx" },
+      { "name":  "vex" },
+      { "name":  "dwarves" },
+      { "name":  "blaze" }
     ]
   }
 ]
