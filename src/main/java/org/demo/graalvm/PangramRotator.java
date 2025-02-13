@@ -1,6 +1,5 @@
 package org.demo.graalvm;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,15 +15,15 @@ public class PangramRotator {
 
     int index = 0;
 
-    final PangramGenerator pangramGenerator;
+    final PangramsGenerator pangramsGenerator;
 
-    public PangramRotator(PangramGenerator pangramGenerator) {
-        this.pangramGenerator = pangramGenerator;
+    public PangramRotator(PangramsGenerator pangramsGenerator) {
+        this.pangramsGenerator = pangramsGenerator;
     }
 
     @GetMapping
     public String hello() {
-        String[] pangrams = pangramGenerator.getAllPangrams();
+        String[] pangrams = pangramsGenerator.getAllPangrams();
         //reset index if index >= pangrams.length
         String pangram = "(not found)";
         if (pangrams != null && pangrams.length > 0) {

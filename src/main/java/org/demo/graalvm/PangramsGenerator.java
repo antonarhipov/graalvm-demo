@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import java.util.Random;
 
 @Component
-public class PangramGenerator {
+public class PangramsGenerator {
 
     private final String[] pangrams = new String[]{
             "Quick brown fox jumps over the lazy dog",

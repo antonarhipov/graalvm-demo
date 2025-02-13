@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -15,11 +13,11 @@ public class PangramController {
     static LocalDateTime timestamp = LocalDateTime.now();
 
     @Autowired
-    PangramGenerator pangramGenerator;
+    PangramsGenerator pangramsGenerator;
 
     @GetMapping("/")
     public String hello() {
-        return formattedTimestamp() + " >> '" + pangramGenerator.getRandomPangram() + "'";
+        return formattedTimestamp() + " >> '" + pangramsGenerator.getRandomPangram() + "'";
     }
 
     private static String formattedTimestamp() {
